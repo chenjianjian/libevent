@@ -42,6 +42,7 @@ enum evhttp_connection_state {
 	EVCON_READING_HEADERS,	/**< reading request/response headers */
 	EVCON_READING_BODY,	/**< reading request/response body */
 	EVCON_READING_TRAILER,	/**< reading request/response chunked trailer */
+	EVCON_READING_PROXY_DATA,/**< reading http connect data */
 	EVCON_WRITING		/**< writing request/response headers/body */
 };
 
